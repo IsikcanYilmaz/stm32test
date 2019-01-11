@@ -1,0 +1,66 @@
+Configuration	stm32test
+STM32CubeMX 	4.27.0
+Date	01/04/2019
+MCU	STM32L053C8Tx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC	IN6	ADC_IN6	PA6
+ADC	IN7	ADC_IN7	PA7
+ADC	IN8	ADC_IN8	PB0
+ADC	IN9	ADC_IN9	PB1
+DAC	DAC_OUT1	DAC_OUT1	PA4
+I2C1	I2C	I2C1_SCL	PB6
+I2C1	I2C	I2C1_SDA	PB7
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM2	Internal Clock	TIM2_VS_ClockSourceINT	VP_TIM2_VS_ClockSourceINT
+TIM2	PWM Generation CH1	TIM2_CH1	PA5
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+USART2	Asynchronous	USART2_RX	PA3
+USART2	Asynchronous	USART2_TX	PA2
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+12	PA2	USART2_TX	
+13	PA3	USART2_RX	
+14	PA4	DAC_OUT1	
+15	PA5	TIM2_CH1	Red_Led
+16	PA6	ADC_IN6	
+17	PA7	ADC_IN7	
+18	PB0	ADC_IN8	
+19	PB1	ADC_IN9	
+30	PA9	USART1_TX	
+31	PA10	USART1_RX	
+40	PB4	GPIO_Output	Green_Led
+42	PB6	I2C1_SCL	
+43	PB7	I2C1_SDA	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : stm32test
+Project Folder : /home/jon/KODMOD/stm32test
+Toolchain / IDE : Makefile
+Firmware Package Name and Version : STM32Cube FW_L0 V1.10.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : Yes
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
